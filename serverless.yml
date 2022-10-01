@@ -1,4 +1,4 @@
-service: my-store-app
+service: shop-app2-pratasenka
 
 frameworkVersion: "3"
 
@@ -19,7 +19,7 @@ plugins:
 
 custom:
   client:
-    bucketName: my-store-app
+    bucketName: shop-app2-pratasenka
     distributionFolder: dist
   s3BucketName: ${self:custom.client.bucketName}
 
