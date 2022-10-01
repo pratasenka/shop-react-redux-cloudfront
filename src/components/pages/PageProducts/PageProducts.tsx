@@ -4,7 +4,6 @@ import Box from "@mui/material/Box";
 export default function PageProducts() {
   return (
     <Box py={3}>
-      <h1>! OUR PRODUCTS LIST: </h1>
       <Products />
     </Box>
   );
