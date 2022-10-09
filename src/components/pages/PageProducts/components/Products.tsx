@@ -11,6 +11,8 @@ import { useAvailableProducts } from "~/queries/products";
 export default function Products() {
   const { data = [], isLoading } = useAvailableProducts();
 
+  console.log(data, isLoading)
+
   if (isLoading) {
     return <Typography>Loading...</Typography>;
   }
@@ -30,9 +32,9 @@ export default function Products() {
             />
             <CardContent sx={{ flexGrow: 1 }}>
               <Typography gutterBottom variant="h5" component="h2">
-                {product.title}
+                {product.brand} {product.name} {product.model}
               </Typography>
-              <Typography>{formatAsPrice(product.price)}</Typography>
+              <Typography>{formatAsPrice(product.cost)}</Typography>
             </CardContent>
             <CardActions>
               <AddProductToCart product={product} />
