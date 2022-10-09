@@ -5,7 +5,7 @@ import { useQuery, useQueryClient, useMutation } from "react-query";
 import React from "react";
 
 export function useAvailableProducts() {
-  return useQuery<AvailableProduct[], AxiosError>(
+  return useQuery<any[], AxiosError>(
     "available-products",
     async () => {
       console.log('sssss')
