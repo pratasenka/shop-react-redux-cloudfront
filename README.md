@@ -1,4 +1,14 @@
-# React-shop-cloudfront
+Link to S3 bucket/website:
+http://my-store-app-qwerty.s3-website-eu-west-1.amazonaws.com
+
+Link to CloudFront website:
+https://d1skl1gtcso5zs.cloudfront.net
+
+
+
+
+
+
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
 
