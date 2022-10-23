@@ -32,9 +32,9 @@ export default function Products() {
             />
             <CardContent sx={{ flexGrow: 1 }}>
               <Typography gutterBottom variant="h5" component="h2">
-                {product.brand} {product.name} {product.model}
+                {product.title}
               </Typography>
-              <Typography>{formatAsPrice(product.cost)}</Typography>
+              <Typography>{formatAsPrice(product.price)}</Typography>
             </CardContent>
             <CardActions>
               <AddProductToCart product={product} />
